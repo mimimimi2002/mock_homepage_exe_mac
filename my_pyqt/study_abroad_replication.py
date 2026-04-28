@@ -79,7 +79,7 @@ class UploadApp(QWidget):
                 return
 
             # ========= パス =========
-            external_base = os.getcwd()
+            external_base = os.path.expanduser("~/Downloads")
             internal_base = self.get_internal_base_path()
 
             external_mock = os.path.join(external_base, "homepage_mock")
